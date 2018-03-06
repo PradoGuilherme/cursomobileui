@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Apache Cordova</title>
+    </head>
+    <body>
+
+      <div id="meuPopover" class="popover">
+        <div class="list">
+          <div class="item">
+            <h1>Cadastrar usuário</h1>
+          </div>
+          <div class="item">
+            <h1>Gráfico de desempenho</h1>
+          </div>
+          <div class="item">
+            <h1>Relatórios</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="header teal">
+        <button class="left icon ion-navicon"></button>
+        <h1>App Notificacao</h1>
+        <div class="right">
+          <i class="icon ion-search"></i>
+          <i class="icon ion-android-add-circle" onclick="alert('Você clicou no add')"></i>
+          <i class="icon ion-android-more-vertical" onclick="openPopover('meuPopover')"></i>
+        </div>
+      </div>
+
+      <div class="content has-header">
+        <div class="list">
+          <div class="item">
+            <div class="right align-top">
+              <button class="icon ion-android-more-vertical"  onclick="openPopover('meuPopover')"></button>
+            </div>
+            <h2 class="text-strong">Guilherme Prado</h2>
+            <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iusto porro autem aliquid nostrum quam minus voluptatibus ipsam laudantium soluta ducimus omnis, neque deserunt id excepturi dolore est vero facilis.</p>
+          </div>
+          <div class="item">
+            <div class="right align-top">
+              <button class="icon ion-android-more-vertical"  onclick="openPopover('meuPopover')"></button>
+            </div>
+            <h2 class="text-strong">Guilherme Prado</h2>
+            <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iusto porro autem aliquid nostrum quam minus voluptatibus ipsam laudantium soluta ducimus omnis, neque deserunt id excepturi dolore est vero facilis.</p>
+          </div>
+          <div class="item">
+            <div class="right align-top">
+              <button class="icon ion-android-more-vertical"  onclick="openPopover('meuPopover')"></button>
+            </div>
+            <h2 class="text-strong">Guilherme Prado</h2>
+            <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iusto porro autem aliquid nostrum quam minus voluptatibus ipsam laudantium soluta ducimus omnis, neque deserunt id excepturi dolore est vero facilis.</p>
+          </div>
+        </div>
+        <p>
+          <button onclick="loading('Aguarde, salvando...')" class="blue">
+            Salvar dados
+          </button>
+        </p>
+      </div>
+      
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
