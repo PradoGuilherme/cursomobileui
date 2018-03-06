@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Apache Cordova</title>
+    </head>
+    <body class=" pink-50">
+    <div class="header pink">
+        <button class="left icon ion-navicon"></button>
+        <h1>AppTab</h1>
+    </div>
+    <div class="footer pink tab">
+        <button class="pink icon ion-android-chat " onclick="openTab('tab-mensagens')">Mensagens</button>
+        <button class="pink icon ion-ios-people active" onclick="openTab('tab-usuarios')">Usuários</button>
+        <button class="pink icon ion-android-call" onclick="openTab('tab-ligacoes')">Ligações</button>
+    </div>
+    <div id="tab-mensagens" class="tab-content has-footer has-header padding">
+        <p>111 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sint, a reprehenderit repellat quo quibusdam accusantium, nostrum iure consectetur minima pariatur nesciunt recusandae, vel odit nisi doloremque amet alias, neque.</p>
+    </div>
+    <div id="tab-usuarios" class="tab-content active has-footer has-header padding">
+        <p>222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sint, a reprehenderit repellat quo quibusdam accusantium, nostrum iure consectetur minima pariatur nesciunt recusandae, vel odit nisi doloremque amet alias, neque.</p>
+    </div>
+    <div id="tab-ligacoes" class="tab-content has-footer has-header padding">
+        <p>333 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sint, a reprehenderit repellat quo quibusdam accusantium, nostrum iure consectetur minima pariatur nesciunt recusandae, vel odit nisi doloremque amet alias, neque.</p>
+    </div>
+
+      
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
